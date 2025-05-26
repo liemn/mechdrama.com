@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechdrama.com</title>
+  <style>
+    :root {
+      --pink: #fca5a5;
+      --mint: #a7f3d0;
+      --orange: #fdba74;
+      --light-gray: #f8fafc;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light-gray);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--text-dark);
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .section {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: var(--orange);
+    }
+
+    .section:nth-child(2) h2 {
+      color: var(--mint);
+    }
+
+    .section:nth-child(3) h2 {
+      color: var(--pink);
+    }
+
+    .section:nth-child(4) h2 {
+      color: #60a5fa;
+    }
+
+    .section:nth-child(5) h2 {
+      color: #f87171;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Mechdrama Logo">
+    <nav>
+      <a href="#drama">Drama</a>
+      <a href="#memes">Memes</a>
+      <a href="#scam">Scammer</a>
+      <a href="#phongbat">Phông Bạt</a>
+      <a href="#blacklist">Blacklist</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" id="drama">
+      <h2>1. Vietnam Mechdrama</h2>
+      <p>Auto collect drama posts from the Facebook group <strong>VNMK Mech Drama</strong> using the Facebook Graph API. Users can react, comment and share via Facebook SDK. Includes filters, top drama users, and a real-time drama dashboard.</p>
+    </section>
+
+    <section class="section" id="memes">
+      <h2>2. Mechmeme</h2>
+      <p>A fun meme board for mech keyboard lovers. Post images (max 200 characters caption), react with Haha, Love, Like, and comment with Facebook or internal system. Sort by newest or most popular.</p>
+    </section>
+
+    <section class="section" id="scam">
+      <h2>3. Scammer Watchlist</h2>
+      <p>A community-powered scammer directory. Lists names, aliases, bank accounts, and evidence links. Optional AI face recognition and voting system. Tag scam severity from Mild to Red Alert.</p>
+    </section>
+
+    <section class="section" id="phongbat">
+      <h2>4. Phông Bạt Hội</h2>
+      <p>A fun community watchlist for people "flexing too hard" with keyboards. Community votes on levels of "phông": 🟢 Cũng cũng, 🟡 Gắt, 🔴 Phông bạt chúa. Admin approval required before publishing.</p>
+    </section>
+
+    <section class="section" id="blacklist">
+      <h2>5. Assembler Blacklist</h2>
+      <p>Report keyboard builders who fail to deliver quality. Users can upload photos/videos, describe issues, and admins moderate posts. Option for accused assemblers to respond. Tags include: rushed, lazy, unskilled, scam disguise.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Mechdrama. All keyboard drama, all the time.
+  </footer>
+</body>
+</html>
